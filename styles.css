@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 .links{
     background-color: black;
@@ -21,9 +22,17 @@
     & .company-name{
         display: flex;
         align-items: center;
-    }
-    & .name{
-        flex-wrap:wrap;
+        color: darkgreen;
+        span{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+        .name{
+            flex-wrap:wrap;
+            font-size: 1rem;
+        }
     }
     & nav ul {
         list-style: none;
@@ -31,6 +40,11 @@
         flex-wrap: wrap;
         li{
             padding: 20px;
+        }
+        li:hover{
+            background-color: green;
+            color: white;
+            transition: 0.7s;
         }
     }
 }
@@ -56,6 +70,8 @@
     text-align: center;
     margin: 50px 0;
     .topic{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
         background-color: rgb(207, 203, 203);
         padding: 10px;
     }
@@ -72,6 +88,7 @@
 }
 .info:hover{
     opacity: 1;
+    transition: 0.4s;
 }
 .articles{
     padding: 50px 15%;
@@ -83,9 +100,10 @@
         .main-content{
             position: relative;
             max-width: 75vh;
+            margin-bottom: 50px;
             .image{
                 width: 100%;
-                padding-top:50px;
+                padding-top:20px;
                 height: 550px;
             }
             .text{
@@ -131,9 +149,13 @@
             }
 .sub-articles{
     background-color: whitesmoke;
-    .heading{
+    .head{
     text-align: center;
     }
+}
+.heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
 }
 .sub-container{
     margin: 0 15%;
@@ -149,15 +171,19 @@
         }
         .text1{
             background-color: aqua;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
             padding: 30px;
+            color: white;
         }
         .read-more{
             margin-top: 20px;
             a{
-                border:solid green 2px;
+                border:solid white 2px;
                 padding: 10px;
                 text-decoration: none;
-                color: green;
+                font-weight: bolder;
+                color: white;
                 text-wrap: nowrap;
             }
         }
@@ -171,16 +197,19 @@
         padding:50px 0;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         .about{
             display: flex;
             flex-basis: 50%;
             flex-direction: column;
             justify-content: space-between;
+            margin-bottom: 50px;
         }
         .quicklinks{
             display: flex;
             flex-direction: column;
             flex-basis: 25%;
+            margin-bottom: 50px;
             row-gap: 10px;
             a{
                 color: green;
