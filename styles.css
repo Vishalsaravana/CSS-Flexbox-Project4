@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.links{
+    background-color: black;
+    color: rgba(256, 256, 256, 0.5);
+    padding: 0 15%;
+}
+.con{
+    padding-left: 40%;
+}
+.menu{
+    background-color: white;
+    margin: 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    & .company-name{
+        display: flex;
+        align-items: center;
+    }
+    & .name{
+        flex-wrap:wrap;
+    }
+    & nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            padding: 20px;
+        }
+    }
+}
+.important-article{
+    background-image: url(images/bgimage.jpg);
+    background-position: center;
+}
+.article1{
+    margin: 0 15%;
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.info{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 300px;
+    min-height: 450px;
+    text-align: center;
+    margin: 50px 0;
+    .topic{
+        background-color: rgb(207, 203, 203);
+        padding: 10px;
+    }
+    .content{
+        background-color: white;
+    }
+    .but{
+        padding: 20px;
+        background-color: green;
+        color: white;
+        text-decoration: none;
+    }
+    opacity: 0.7;
+}
+.info:hover{
+    opacity: 1;
+}
+.articles{
+    padding: 50px 15%;
+    background-color: white;
+    article{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .main-content{
+            position: relative;
+            max-width: 75vh;
+            .image{
+                width: 100%;
+                padding-top:50px;
+                height: 550px;
+            }
+            .text{
+                background-color: black;
+                position: absolute;
+                height: 150px;
+                width: 100%;
+                bottom: 0;
+                text-align: center;
+                color: white;
+                padding-right: 30px;
+            }
+        }
+        .sub-content{
+            max-width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .image1{
+                display: flex;
+            }
+            & img{
+                max-width: 200px;
+                flex-shrink: 0;
+                margin-right: 20px;
+            }
+            .text{
+                margin-bottom: 20px;
+                display: inline;
+            }
+        }
+    }
+}
+.read-more{
+                margin-top: 20px;
+                a{
+                    border:solid green 2px;
+                    padding: 10px;
+                    text-decoration: none;
+                    color: green;
+                    text-wrap: nowrap;
+                }
+            }
+.sub-articles{
+    background-color: whitesmoke;
+    .heading{
+    text-align: center;
+    }
+}
+.sub-container{
+    margin: 0 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .sub-article1{
+        margin-top: 20px;
+        width: 60vh;
+        display: flex ;
+        img{
+            max-width: 50%;
+        }
+        .text1{
+            background-color: aqua;
+            padding: 30px;
+        }
+        .read-more{
+            margin-top: 20px;
+            a{
+                border:solid green 2px;
+                padding: 10px;
+                text-decoration: none;
+                color: green;
+                text-wrap: nowrap;
+            }
+        }
+    }
+}
+.end{
+    padding: 0 15%;
+    background-color: rgb(36, 36, 36);
+    color: rgba(256, 256, 256, 0.5);
+    .end-content{
+        padding:50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        .about{
+            display: flex;
+            flex-basis: 50%;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .quicklinks{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 25%;
+            row-gap: 10px;
+            a{
+                color: green;
+                text-decoration: none;
+            }
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            input{
+                background-color: rgb(36, 36, 36);
+            }
+            button{
+                width: 50%;
+                background-color: rgb(10, 190, 10);
+                padding: 10px;
+                margin-top: 10px;
+                color: white;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                font-weight: bolder;
+            }
+        }
+    }
+}
