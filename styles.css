@@ -122,13 +122,16 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            .image1{
+            .sub-content-article{
                 display: flex;
             }
             & img{
                 max-width: 200px;
                 flex-shrink: 0;
                 margin-right: 20px;
+                border:solid wheat 2px;
+                padding: 10px;
+                margin-bottom: 10px;
             }
             .text{
                 margin-bottom: 20px;
