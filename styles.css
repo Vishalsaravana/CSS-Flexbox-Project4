@@ -120,8 +120,8 @@
         .sub-content{
             max-width: 45%;
             .sub-content-article{
-                padding-top: 18px;
                 display: flex;
+                padding-top: 20px;
             }
             & img{
                 max-width: 140px;
